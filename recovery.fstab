@@ -1,0 +1,12 @@
+# mount point	fstype		device
+
+#/system       ext4      /dev/block/platform/intel/by-label/system
+/system       ext4      /dev/block/mmcblk0p14
+#/data         ext4      /dev/block/platform/intel/by-label/data     length=-16384
+/data         ext4      /dev/block/mmcblk0p15     length=-16384
+#/cache        ext4      /dev/block/platform/intel/by-label/cache
+/cache        ext4      /dev/block/mmcblk0p12
+/boot         emmc      /dev/block/platform/intel/by-label/boot
+/recovery     emmc      /dev/block/platform/intel/by-label/recovery
+/external_sd  vfat      /dev/block/mmcblk1p1	/dev/block/mmcblk1	flags=removable;storage;display="Micro SD"
+/usb-otg      vfat      /dev/block/sda1	/dev/block/sda	            flags=removable;storage;display=USB
