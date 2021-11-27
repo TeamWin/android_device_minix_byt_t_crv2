@@ -15,7 +15,7 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
-$(call inherit-product, build/target/product/full.mk)
+$(call inherit-product, build/target/product/embedded.mk)
 
 PRODUCT_NAME := minix_byt_t_crv2
 PRODUCT_BRAND := Minix
